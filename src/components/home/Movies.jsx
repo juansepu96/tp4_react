@@ -28,7 +28,7 @@ const MoviesList = () => {
             movieDetail.render(
                 <MovieDetail props={movieData}/>
             );
-            document.getElementById('selectedOption').val(movieData.titulo);
+            document.getElementById('selectedOption').value = movieData.titulo;
         } catch (err) {
             console.log(err);
         }
